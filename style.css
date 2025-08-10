@@ -1,0 +1,58 @@
+body {
+	background-color: slategray;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bio {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 3rem;
+}
+
+.project {
+	margin: 10rem;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.project-card {
+	border: 1rem solid springgreen;
+	border-radius: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 15rem;
+	height: 25rem;
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2rem;
+	margin: 1rem;
+}
+
+.contact input {
+	width: 15rem;
+	margin: 1rem;
+}
+
+.contact button {
+	width: 16rem;
+}
