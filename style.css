@@ -1,18 +1,35 @@
 body {
-	background-color: slategray;
+	margin: 0;
+	padding: 0;
+	color: #DBCDC6;
+	background-color: #1F1A38;
 }
 
-footer {
-	position: fixed;
-	width: 100%;
-	text-align: center;
-	bottom: 0;
+
+header {
+	background-color: #1F1A38;
 }
 
 .navbar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin: 1rem;
+}
+
+.nav-items {
+	display: flex;
+	list-style: none;
+
+}
+
+.nav-items li {
+	margin-right: 20px;
+}
+
+.nav-items a {
+	text-decoration: none;
+	color: #DBCDC6;
 }
 
 .bio {
@@ -20,32 +37,39 @@ footer {
 	align-items: center;
 	flex-direction: column;
 	padding-bottom: 3rem;
+	text-align: center;
 }
+
 
 .project {
-	margin: 10rem;
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
+	background-color: #7B506F;
 }
 
+
 .project-card {
-	border: 1rem solid springgreen;
+	border: 1rem solid #EAD7D1;
 	border-radius: 2rem;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	flex-direction: column;
+	text-align: center;
 	width: 15rem;
-	height: 25rem;
+	height: auto;
+	margin: 2rem;
+}
+
+
+.project-items img {
+	width: 100%;
+	object-fit: contain;
 }
 
 .contact {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: space-evenly;
-	padding: 2rem;
-	margin: 1rem;
+	background-color: #7B506F;
 }
 
 .contact input {
@@ -55,4 +79,23 @@ footer {
 
 .contact button {
 	width: 16rem;
+}
+
+.contact-items {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: auto;
+	padding-bottom: 2rem;
+
+}
+
+
+.foot {
+	background-color: #1F1A38;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	text-align: center;
 }
