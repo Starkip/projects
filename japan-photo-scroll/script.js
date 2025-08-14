@@ -3,9 +3,9 @@ const imageContainer = document.getElementById('image-container');
 let photosArray = [];
 
 // unsplash api
-const count = 10;
+let imgaecount = 3;
 const apiKey = 'MgRR5DJnk4oih23Qo6EftTCqeT9fpnEB7GY25tfDr8w';
-const apiUrl = `https://api.unsplash.com/photos/random?query=japan&client_id=${apiKey}&count=${count}`;
+const apiUrl = `https://api.unsplash.com/photos/random?query=japan&client_id=${apiKey}&count=${imgaecount}`;
 
 function setAttributes(element, attributes) {
 	for (const key in attributes) {
@@ -15,8 +15,8 @@ function setAttributes(element, attributes) {
 
 function displayPhotos() {
 	photosArray.forEach((photo) => {
-		const item = document.createElement('a');
-		setAttributes(item, {
+		const link = document.createElement('a');
+		setAttributes(link, {
 			href: photo.links.html,
 			target: '_blank',
 		});
@@ -28,8 +28,8 @@ function displayPhotos() {
 			title: photo.alt_description,
 		});
 
-		item.appendChild(img);
-		imageContainer.appendChild(item);
+		link.appendChild(img);
+		imageContainer.appendChild(link);
 	});
 }
 
